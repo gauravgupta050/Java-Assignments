@@ -1,0 +1,37 @@
+Q1 : In Java, conditional operators check the condition and decides the desired result on the basis of both conditions.
+
+Q2 : There are two types of mathematical operators: unary and binary. Unary operators perform an action with a single operand. Binary operators perform actions with two operands. 
+
+Q3 : The switch case in java is used to select one of many code blocks for execution.
+
+Q5 : Conditional statements are the statements to perform different actions for different decisions.
+
+Java has the following conditional statements:
+Use if to specify a block of code to be executed, if a specified condition is true.
+Use else to specify a block of code to be executed, if the same condition is false.
+Use else if to specify a new condition to test, if the first condition is false.
+Use switch to specify many alternative blocks of code to be executed.
+
+Q6 : if (condition1) {
+    // block of code to be executed if condition1 is true
+    } else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+    } else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+    }
+
+Q7 : The three types of iterative statements in java are :
+for statements
+while statements
+do-while statements
+
+Q8 : In the while loop,the condition is checked prior to executing any statements whereas in the case of do while loop, statements are run at least once, and then the condition is verified.
+
+Q9 : public class HelloWorld {
+    public static void main(String[] args) {
+    int i;
+    for (i=1;i<=10;i++){
+    println(i);
+    }
+    }
+    }  
