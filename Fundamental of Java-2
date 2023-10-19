@@ -1,0 +1,50 @@
+Q1: Static --> Static almost always means fixed or bound at compile time, and cannot thereafter be changed. 
+    Dynamic --> Dynamic almost always means not fixed or bound until run time, and therefore can change during the course of execution.
+
+Q2 : A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
+
+Q3:  A variableName is the name of the variable like (x). The equal sign is used to assign values to the variable.
+
+Q4 : A primitive data type specifies the size and type of variable values, and it has no additional methods. There are eight primitive data types in Java are byte, short, int, long, float, double, boolean and char.
+
+Q5 : Identifiers in Java are a sequence of characters to identify something in a program. They are names given to a class, variable, package, method, or interface and allow the programmer to refer to the specific item from any place in the program.
+
+Q6 : There are multiple types of operators in Java all are mentioned below:
+    Arithmetic Operators
+    Unary Operators
+    Assignment Operator
+    Relational Operators
+    Logical Operators
+    Ternary Operator
+    Bitwise Operators
+    Shift Operators
+    instance of operator
+
+Q7 : Increment Operator --> The increment operator is an operator which is used to increase the value of a variable by 1, on which it is applied.
+
+Example:
+class PreIncrement {
+       
+    public static void main(String[] args) {       
+        int x = 10;       
+        int y = ++x;       
+        System.out.println("y value is: " + y);   
+    }
+
+}
+
+Output:
+y value is: 11
+
+    Decrement Operator --> The Decrement operator is an operator which is used to decrease the value of the variable by 1, on which it is applied.
+    Example:
+    class PreDecrement {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = --x;
+        System.out.println("y value is: " + y);
+    }
+}
+Output:
+
+y value is: 9
