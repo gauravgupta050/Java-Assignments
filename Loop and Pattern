@@ -1,0 +1,51 @@
+Q1 : class AlphabetsDemo
+{
+   public static void main(String args[])
+   {
+      char ch;
+ 
+      for( ch = 'A' ; ch <= 'H' ; ch++ )
+         System.out.println(ch);
+   }
+}
+
+Q2: public class PyramidPattern  
+{    
+public static void main(String args[])   
+{    
+int i, j, row = 6;       
+for (i=0; i<row; i++)   
+{     
+for (j=row-i; j>1; j--)   
+{  
+System.out.print(" ");   
+}    
+for (j=0; j<=i; j++ )   
+{       
+System.out.print("* ");   
+}   
+System.out.println();   
+}   
+}   
+}  
+
+
+Q4 : public class PatternPWSkills {
+    public static void main(String[] args) {
+        String word = "PW SKILLS";
+        int n = word.length();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || i == n - 1) {
+                    System.out.print(word.charAt(j) + " ");
+                } else if (j == 0 || j == n - 1) {
+                    System.out.print(word.charAt(i) + " ");
+                } else {
+                    System.out.print("  ");  // Two spaces for the inner part
+                }
+            }
+            System.out.println();  // Move to the next line
+        }
+    }
+}
