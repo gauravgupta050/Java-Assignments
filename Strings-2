@@ -1,0 +1,105 @@
+Q1: import java.util.*;  
+    class UserInputDemo1  
+    {  
+    public static void main(String[] args)  
+    {  
+    Scanner sc= new Scanner(System.in); //System.in is a standard input stream  
+    System.out.print("Enter a string: ");  
+    String str= sc.nextLine();              //reads string   
+    System.out.print("You have entered: "+str);             
+    }  
+    }  
+
+Q2: The Java String class concat() method combines specified string at the end of this string. It returns a combined string. It is like appending another string.
+    public class ConcatExample{    
+    public static void main(String args[]){    
+    String s1="java string";    
+    s1.concat("is immutable");    
+    System.out.println(s1);    
+    s1=s1.concat(" is immutable so assign it explicitly");    
+    System.out.println(s1);    
+    }} 
+
+Q3: To calculate the length of a string in Java, you can use an inbuilt length() method of the Java string class.
+    Example: 
+    class CalcLength {
+        public static void main( String args[] ) {
+           String name = "educative";  
+           System.out.println("The length of the String \""+name+"\" is: " +length);    }
+    }
+
+Q4: There are three ways to compare String in Java:
+    By Using equals() Method
+    By Using == Operator
+    By compareTo() Method
+
+Q5: class CalcLength {
+        public static void main( String args[] ) {
+           String name = "Refrigerator";  
+           System.out.println("The length of the String \""+name+"\" is: " +length);    }
+    }
+
+Q6: class Check_Letter
+    {
+    	public static void main(String[] args)
+    	{
+    		String str = "Umbrella";
+    		boolean pre = false;
+    		for(int i = 0;i<str.length();i++)
+    		{
+    			if(str.charAt(i) == 'e')
+    			{
+    				pre=true;
+    				break;
+    			}
+    		}
+    		System.out.println(pre);
+    	}
+    }
+
+Q7: import java.util.Scanner;
+    class delete
+    
+    {
+    
+        public static void main(String args[])
+    
+        {
+    
+        String s;
+        int j=0;
+        System.out.println("Enter a string");
+        Scanner so=new Scanner(System.in);
+        s= so.nextLine();
+        char ch[]=new char[20];
+    
+        for(int i=0;i<s.length();i++)
+    
+        {
+    
+        if(s.charAt(i)=='a'|| s.charAt(i)=='A'||s.charAt(i)=='e'|| s.charAt(i)=='E'||s.charAt(i)=='i'|| s.charAt(i)=='I'||s.charAt(i)=='o'|| s.charAt(i)=='O'||s.charAt(i)=='U'|| s.charAt(i)=='u')
+    
+        {
+        ch[j++]=s.charAt(i);
+    
+        
+        }
+    
+            else
+        
+            {
+    
+            continue;
+    
+            }
+    
+        }
+        for(int i=0;i<j;i++)
+        {
+        System.out.print(ch[i]);
+        }
+        System.out.println();
+    }
+    
+    }
+
