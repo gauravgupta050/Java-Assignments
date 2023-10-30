@@ -1,0 +1,174 @@
+Q1: import java.util.*;
+import java.util.Map;
+import java.io.*;
+  
+public class HashMapClass {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements of Key-pair: ");  
+        
+        int n = sc.nextInt();
+
+       
+        TreeMap<Integer, String> tm = new TreeMap<>();
+
+        System.out.print("Enter the elements in Key and value : ");  
+        for(int i=0;i<n;i++){
+            int key = sc.nextInt();
+            String value = sc.next();
+            tm.put(key, value);
+        }
+
+        System.out.println("The value of Map is: " + tm);
+
+    }
+}
+
+Q2:import java.util.*;
+import java.util.Map;
+import java.io.*;
+  
+public class HashMapClass {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements of Key-pair: ");  
+        
+        int n = sc.nextInt();
+
+       
+        TreeMap<String, Integer> tm = new TreeMap<>();
+
+        System.out.print("Enter the elements in Key and value : ");  
+        for(int i=0;i<n;i++){
+            int key = sc.nextInt();
+            String value = sc.next();
+            tm.put(value, key);
+        }
+
+        System.out.println("The value of Map is: " + tm);
+
+    }
+}
+
+Q3:import java.util.*;
+import java.util.Map;
+import java.io.*;
+  
+public class HashMapClass {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements of array: ");  
+        
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        System.out.print("Enter the elements of array: ");  
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+
+        HashMap<Integer, Integer> tm = new HashMap<>();
+        int answer = 0;
+        for(int i=0;i<n;i++){
+            if(tm.containsKey(arr[i])){
+                System.out.println("Yes");
+                answer =1;
+                break;
+            }
+            tm.put(arr[i], 1);
+        }
+
+        if(answer == 0)
+            System.out.println("No");
+
+    }
+}
+
+Q4: import java.util.*;
+import java.util.Map;
+import java.io.*;
+  
+public class HashMapClass {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements of array: ");  
+        
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        System.out.print("Enter the elements of array: ");  
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+
+        TreeMap<Integer, Integer> tm = new TreeMap<>();
+
+        for(int i=0;i<n;i++){
+            tm.put(arr[i], 1);
+        }
+
+        System.out.println("Largest Element of Map is : " + tm.lastEntry().getKey());
+
+    }
+}
+
+Q5: import java.util.*;
+import java.util.Map;
+import java.io.*;
+  
+public class HashMapClass {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the RansomNote String: ");  
+        
+        String s=sc.nextLine();
+
+        System.out.print("Enter the Magazine String: ");  
+        
+        String r=sc.nextLine();
+
+
+        HashMap<Character, Integer> hm1 = new HashMap<>();
+
+        for(int i=0;i<s.length(); i++ ){
+            if(hm1.containsKey(s.charAt(i))) {
+                hm1.put(s.charAt(i), hm1.get(s.charAt(i))+1);
+            }
+            else
+                hm1.put(s.charAt(i), 1);
+        }     
+
+        HashMap<Character, Integer> hm2 = new HashMap<>();
+
+        for(int i=0;i<r.length(); i++ ){
+            if(hm2.containsKey(r.charAt(i))) {
+                hm2.put(r.charAt(i), hm2.get(r.charAt(i))+1);
+            }
+            else
+                hm2.put(r.charAt(i), 1);
+        }     
+
+        
+
+        Integer answer = -1;
+        for(Map.Entry<Character, Integer> e: hm1.entrySet()) {
+
+            if(e.getValue() > hm2.get(e.getKey())){
+
+                System.out.println("false");
+                answer = 1;
+                break;
+            }
+        }
+        if(answer == -1)
+            System.out.println("True");
+
+    }
+}
