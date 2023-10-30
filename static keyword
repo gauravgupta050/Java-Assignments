@@ -1,0 +1,20 @@
+SQ1 : To craete a object in java , the specific keyword "new" is used . 
+      Example :
+      className objectName = new className();
+
+Q2 : The new keyword in Java instantiates a class by allocating desired memory for an associated new object.
+
+Q3 : Types of variable in java are:
+      Local Variable
+          A local variable in Java can be declared locally in methods, code blocks, and constructors.
+      Instance Variable
+          An instance variable in Java can be declared outside a block, method or constructor but inside a class.
+      Static Variable
+          A static/class variable can be defined using the static keyword. These variables are declared inside a class but outside a method and code block.
+
+Q4 :  Local variables are visible only in the method or block they are declared whereas instance variables can been seen by all methods in the class.
+
+Q5 : Stack is a memory place where the methods and the local variables are stored. 
+      Heap is a memory place where the objects and its instance variable are stored.
+
+Q6 : If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
