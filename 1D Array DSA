@@ -1,0 +1,64 @@
+Q1: public class CODE10 {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5,6,7,8};
+   	 int i = 0, sum = 0;
+     while (i < arr.length) {
+         sum += arr[i];
+         i += 2;
+     }
+     System.out.println(sum);
+    }
+}
+
+Q2: public class CODE11 {
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        for (int elem : arr) {
+            if (elem % 2 == 0)
+                System.out.println(elem);
+
+        }
+    }
+}
+
+Q3: public class CODE12 {
+    public static void main(String[] args) {
+        int[] arr = { 10, 7, -5, 8, 9, 0, -4 };
+        int max = Integer.MIN_VALUE;
+        for (int val : arr) {
+            max = Math.max(max, val);
+        }
+        System.out.print("Largest in given array is " + max);
+
+    }
+}
+
+Q4: public class CODE13 {
+    public static void main(String[] args) {
+        int[] arr = { 34, 21, 54, 65, 43 };
+        int arr_size = arr.length;
+        int i, first, second;
+        // There should be at least two elements
+        if (arr_size < 2) {
+            System.out.printf(" Invalid Input ");
+            return;
+        }
+        int largest = second = Integer.MIN_VALUE;
+
+        // Find the largest element
+        for (i = 0; i < arr_size; i++)
+            largest = Math.max(largest, arr[i]);
+
+        // Find the second largest element
+        for (i = 0; i < arr_size; i++) {
+            if (arr[i] != largest)
+                second = Math.max(second, arr[i]);
+        }
+        if (second == Integer.MIN_VALUE)
+            System.out.printf("There is no second " +
+                    "largest element\n");
+        else
+            System.out.printf("%d\n", second);
+    }
+
+}
